@@ -8,6 +8,7 @@ import {
   Message,
 } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css'
+import Kitties from './Kitties'
 
 import { SubstrateContextProvider, useSubstrateState } from './substrate-lib'
 import { DeveloperConsole } from './substrate-lib/components'
@@ -72,6 +73,9 @@ function Main() {
           </Grid.Row>
           <Grid.Row stretched>
             <Balances />
+          </Grid.Row>
+          <Grid.Row>
+            <Kitties />
           </Grid.Row>
           <Grid.Row>
             <Transfer />
